@@ -1,0 +1,3 @@
+
+
+# podman run -it --rm --network none -v (pwd):(pwd) -w (pwd) grammarcheck:latest PATH...
