@@ -4,7 +4,9 @@ FROM alpine:latest
 RUN <<EOF
 set -e
 
-apk add gcompat libgcc libgc++ openjdk21-jre
+apk add --no-cache \
+    gcompat libgcc libgc++ openjdk21-jre \
+;
 
 wget https://github.com/caderek/gramma/releases/download/v1.6.0/gramma-linux64-v1.6.0.zip
 unzip gramma-linux64-v1.6.0.zip
